@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..900&family=Londrina+Outline&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  //   background: rgb(136, 115, 115);
+  font-family: Sora, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.btn-primary {
+  font-family: Sora, sans-serif;
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+section.hero-top {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  & > * {
+  }
+  header.menu {
+    // position: absolute;
+    // width: 80%;
+    // left: 50%;
+    // transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 1rem 2rem;
+    pointer-events: none;
+    // margin-top: 1.5rem;
+    border-radius: 10px;
+    & > nav > ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin: 0 0.6rem;
+      }
+      a {
+        all: unset;
+        cursor: pointer;
+      }
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    iframe {
+      width: 100%;
+      height: 120vh;
+      border: 0;
+    }
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    // max-width: 800px;
+    font-size: 48px;
+    letter-spacing: -0.96px;
+    line-height: 117%;
+    margin: auto 0;
+    pointer-events: none;
+  }
+
+  @media (max-width: 991px) {
+    .main-container {
+      font-size: 40px;
+    }
+  }
+
+  .intro-container {
+    display: flex;
+    padding-right: 20px;
+    gap: 16px;
+    color: var(--Primary-Black, #000);
+  }
+
+  @media (max-width: 991px) {
+    .intro-container {
+      flex-wrap: wrap;
+      font-size: 40px;
+    }
+  }
+
+  .intro-text {
+    font-family: Sora, sans-serif;
+    font-weight: 400;
+  }
+
+  @media (max-width: 991px) {
+    .intro-text {
+      font-size: 40px;
+    }
+  }
+
+  .intro-name {
+    font-family: Sora, sans-serif;
+    font-weight: 800;
+  }
+
+  @media (max-width: 991px) {
+    .intro-name {
+      font-size: 40px;
+    }
+  }
+
+  .title-container {
+    display: flex;
+    margin-top: 20px;
+    padding-right: 20px;
+    gap: 16px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 991px) {
+    .title-container {
+      flex-wrap: wrap;
+      font-size: 40px;
+      white-space: initial;
+    }
+  }
+
+  .title-section {
+    color: var(--Primary-Black, #000);
+    font-family: Sora, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .title-section {
+      font-size: 40px;
+    }
+  }
+
+  .title-role {
+    -webkit-text-stroke-width: 3;
+    -webkit-text-stroke-color: var(--Primary-Black, #000);
+    font-family: Sora, sans-serif;
+    border: 3px solid rgba(0, 0, 0, 1);
+  }
+
+  @media (max-width: 991px) {
+    .title-role {
+      font-size: 40px;
+    }
+  }
+
+  .location-container {
+    display: flex;
+    margin-top: 20px;
+    padding-right: 20px;
+    gap: 16px;
+    color: var(--Primary-Black, #000);
+  }
+
+  @media (max-width: 991px) {
+    .location-container {
+      flex-wrap: wrap;
+      font-size: 40px;
+    }
+  }
+
+  .location-text {
+    font-family: Sora, sans-serif;
+    font-weight: 400;
+  }
+
+  @media (max-width: 991px) {
+    .location-text {
+      font-size: 40px;
+    }
+  }
+
+  .location-name {
+    font-family: Sora, sans-serif;
+    font-weight: 800;
+  }
+
+  @media (max-width: 991px) {
+    .location-name {
+      font-size: 40px;
+    }
+  }
+
+  .description {
+    color: var(--Zinc-500, #71717a);
+    letter-spacing: 0.32px;
+    margin-top: 32px;
+    width: 100%;
+    font: 400 16px/24px Sora, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .description {
+      max-width: 100%;
+    }
+  }
+}
