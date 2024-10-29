@@ -11,6 +11,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background: black;
+  color: white;
 }
 
 .btn-primary {
@@ -74,7 +76,9 @@ section.hero-top {
 
     iframe {
       width: 100%;
-      height: 120vh;
+      // height: 120vh;
+      aspect-ratio: 16/9;
+      border: 1px solid red;
       border: 0;
     }
   }
@@ -87,7 +91,7 @@ section.hero-top {
     font-size: 48px;
     letter-spacing: -0.96px;
     line-height: 117%;
-    margin: auto 0;
+    // margin: auto 0;
     pointer-events: none;
   }
 
@@ -97,11 +101,18 @@ section.hero-top {
     }
   }
 
+  .main-container > h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+  }
+
   .intro-container {
     display: flex;
     padding-right: 20px;
     gap: 16px;
-    color: var(--Primary-Black, #000);
+    color: #fff;
   }
 
   @media (max-width: 991px) {

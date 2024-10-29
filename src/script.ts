@@ -1,7 +1,7 @@
 const IframeInjector = (function () {
   // Private variables
   const encodedUrl: string =
-    "aHR0cHM6Ly9teS5zcGxpbmUuZGVzaWduL25leGJvdHJvYm90Y2hhcmFjdGVyY29uY2VwdC01NTFkODNhNDM2NjM3ZDQyZjAxYjU1Mjk1MDhiMWI0Yi8=";
+    "aHR0cHM6Ly9teS5zcGxpbmUuZGVzaWduL25leGJvdHJvYm90Y2hhcmFjdGVyY29uY2VwdC0wYmYzMmRjM2EyMjNkODYyZmEyMzg4ZDQzMDVhMDVjYS8=";
 
   // Private method to decode Base64
   function decodeBase64(encoded: string): string {
@@ -31,14 +31,6 @@ const IframeInjector = (function () {
         const decodedUrl = decodeBase64(encodedUrl);
         injectIframe(containerSelector, decodedUrl);
       });
-      // Adding a passive wheel event listener for demonstration
-      document.addEventListener(
-        "wheel",
-        function (event: WheelEvent) {
-          console.log("Wheel event triggered");
-        },
-        { passive: true }
-      );
     },
   };
 })();
