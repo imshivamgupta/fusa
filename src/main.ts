@@ -73,24 +73,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Handle contact form submission
-  const contactForm = document.getElementById('contact-form') as HTMLFormElement;
-  if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
+  // const contactForm = document.getElementById('contact-form') as HTMLFormElement;
+  // if (contactForm) {
+  //   contactForm.addEventListener('submit', async (e) => {
+  //     e.preventDefault();
 
-      try {
-        await emailjs.sendForm(
-          'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-          'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-          contactForm
-        );
+  //     try {
+  //       await emailjs.sendForm(
+  //         'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+  //         'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+  //         contactForm
+  //       );
 
-        alert('Message sent successfully!');
-        contactForm.reset();
-      } catch (error) {
-        console.error('Error sending email:', error);
-        alert('Failed to send message. Please try again.');
-      }
-    });
-  }
+  //       alert('Message sent successfully!');
+  //       contactForm.reset();
+  //     } catch (error) {
+  //       console.error('Error sending email:', error);
+  //       alert('Failed to send message. Please try again.');
+  //     }
+  //   });
+  // }
 });
