@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <section class="hero-top">
@@ -218,6 +219,113 @@
         <span class="next">→</span>
       </div>
     </section>
+
+    <section class="testimonials-section">
+      <div class="section-title">
+        <h2>Client Testimonials</h2>
+        <p class="subtitle">What People Say About My Work</p>
+      </div>
+
+      <div class="swiper testimonials-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="quote">"</div>
+              <p class="content">Shivam is an exceptional developer who delivered our project ahead of schedule. His attention to detail and problem-solving skills are remarkable.</p>
+              <div class="author">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John" alt="John Smith" class="avatar" />
+                <div class="info">
+                  <h4>John Smith</h4>
+                  <p>CEO, TechStart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="quote">"</div>
+              <p class="content">Working with Shivam was a pleasure. He understood our requirements perfectly and created an amazing user experience.</p>
+              <div class="author">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="Sarah Johnson" class="avatar" />
+                <div class="info">
+                  <h4>Sarah Johnson</h4>
+                  <p>Product Manager, InnovateCo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="quote">"</div>
+              <p class="content">The website Shivam built for us exceeded our expectations. His technical expertise and creativity are truly impressive.</p>
+              <div class="author">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michael" alt="Michael Chen" class="avatar" />
+                <div class="info">
+                  <h4>Michael Chen</h4>
+                  <p>Founder, DesignHub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="section-title">
+        <h2>Get in Touch</h2>
+        <p class="subtitle">Let's Work Together</p>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://github.com/imshivamgupta" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/imshivamgupta" target="_blank">LinkedIn</a></li>
+            <li><a href="https://twitter.com/imshivamgupta" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li>Email: shivamg8797@gmail.com</li>
+            <li>Location: India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Shivam Gupta. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
